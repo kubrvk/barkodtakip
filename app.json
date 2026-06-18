@@ -13,7 +13,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.portfolio.barkodtakip",
+      "package": "com.kubrick.barkodtakip",
       "permissions": [
         "CAMERA"
       ]
