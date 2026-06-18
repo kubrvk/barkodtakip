@@ -17,7 +17,6 @@
     "@react-navigation/native": "latest",
     "@react-navigation/native-stack": "latest",
     "expo": "latest",
-    "expo-barcode-scanner": "latest",
     "expo-camera": "latest",
     "expo-constants": "~56.0.18",
     "expo-linking": "~56.0.14",
