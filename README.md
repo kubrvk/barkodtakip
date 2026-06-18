@@ -36,3 +36,23 @@ GitHub repo ayarlarinda su secret'i ekleyin:
 - `FIREBASE_SERVICE_ACCOUNT`
 
 Firebase project id `.firebaserc` ve GitHub Actions workflow icinde `barkodtakips` olarak ayarlidir.
+
+## Android build
+
+Telefona direkt kurmak icin APK:
+
+```bash
+npx eas-cli@latest build -p android --profile preview
+```
+
+Google Play Console icin AAB:
+
+```bash
+npx eas-cli@latest build -p android --profile production
+```
+
+Play Console'a otomatik gonderim icin:
+
+```bash
+npx eas-cli@latest submit -p android --profile production
+```
