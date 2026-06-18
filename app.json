@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "BarkodTakip",
+    "slug": "barkod-takip",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "barkodtakip",
+    "userInterfaceStyle": "dark",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.portfolio.barkodtakip",
+      "permissions": [
+        "CAMERA"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Barkod okutmak için kameraya erişim gerekli."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "local-mvp"
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "barkod-takip",
+  "version": "1.0.0",
+  "private": true,
+  "main": "expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "web": "cross-env EXPO_ROUTER_DISABLE_RN_NAVIGATION_CHECK=1 expo start --web",
+    "build:web": "cross-env EXPO_ROUTER_DISABLE_RN_NAVIGATION_CHECK=1 expo export --platform web",
+    "test": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "^56.0.15",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-navigation/bottom-tabs": "latest",
+    "@react-navigation/native": "latest",
+    "@react-navigation/native-stack": "latest",
+    "expo": "latest",
+    "expo-barcode-scanner": "latest",
+    "expo-camera": "latest",
+    "expo-router": "latest",
+    "expo-status-bar": "latest",
+    "firebase": "latest",
+    "lucide-react-native": "latest",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.85.3",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "latest",
+    "react-native-web": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "cross-env": "latest",
+    "typescript": "latest"
+  }
+}
