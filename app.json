@@ -31,10 +31,6 @@
         }
       ]
     ],
-    "extra": {
-      "eas": {
-        "projectId": "local-mvp"
-      }
-    }
+    "extra": {}
   }
 }
