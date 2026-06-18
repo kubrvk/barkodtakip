@@ -14,7 +14,6 @@
     },
     "android": {
       "package": "com.portfolio.barkodtakip",
-      "versionCode": 1,
       "permissions": [
         "CAMERA"
       ]
@@ -31,6 +30,10 @@
         }
       ]
     ],
-    "extra": {}
+    "extra": {
+      "eas": {
+        "projectId": "d09bb08a-13a7-4e99-8400-ef031936fb4f"
+      }
+    }
   }
 }

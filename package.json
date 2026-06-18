@@ -19,7 +19,8 @@
     "expo": "latest",
     "expo-barcode-scanner": "latest",
     "expo-camera": "latest",
-    "expo-router": "latest",
+    "expo-constants": "~56.0.18",
+    "expo-linking": "~56.0.14",
     "expo-status-bar": "latest",
     "firebase": "latest",
     "lucide-react-native": "latest",
@@ -28,6 +29,7 @@
     "react-native": "0.85.3",
     "react-native-safe-area-context": "~5.7.0",
     "react-native-screens": "latest",
+    "react-native-svg": "15.15.4",
     "react-native-web": "latest"
   },
   "devDependencies": {
