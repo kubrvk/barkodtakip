@@ -12,10 +12,6 @@ The app helps you scan barcodes, save product information, manage inventory, and
 Built primarily for Android and Web, the core design challenge was creating a responsive, cross-platform experience that handles device camera integration, local state management, and real-time database updates seamlessly.
 <br clear="left"/>
 <br>
-<p align="center">
-<img src="https://raw.githubusercontent.com/kubrvk/portfolio/main/img/galeri/barkodtakip2.PNG" width="24%"/><img src="https://raw.githubusercontent.com/kubrvk/portfolio/main/img/galeri/barkodtakip3.PNG" width="24%"/><img src="https://raw.githubusercontent.com/kubrvk/portfolio/main/img/galeri/barkodtakip4.PNG" width="24%"/><img src="https://raw.githubusercontent.com/kubrvk/portfolio/main/img/galeri/barkodtakip5.PNG" width="24%"/>
-</p>
-
 
 ---
 
@@ -65,7 +61,6 @@ barkodtakip/
 The application is divided into several purpose-built screens to handle specific stages of the stock management workflow:
 
 ```text
-Application Screens
 ── LoginScreen:
 The entry point of the application.
 Handles user authentication securely via Firebase Auth.
