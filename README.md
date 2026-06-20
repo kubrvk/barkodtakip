@@ -47,18 +47,35 @@ barkodtakip/
 │   ├── config/                # Firebase configuration and constants
 │   ├── hooks/                 # Custom React hooks for business logic
 │   ├── screens/               # Main application screens
-│   │   ├── AddProductScreen.tsx   # Product entry form
-│   │   ├── BarcodeScreen.tsx      # Camera and barcode scanning
-│   │   ├── CountScreen.tsx        # Inventory counting logic
-│   │   ├── DashboardScreen.tsx    # App overview and stats
-│   │   ├── LocationsScreen.tsx    # Location management
-│   │   ├── LoginScreen.tsx        # Firebase Authentication
-│   │   ├── ProductsScreen.tsx     # List of tracked items
-│   │   └── ProfileScreen.tsx      # User settings
+│   │   ├── AddProductScreen.tsx   
+│   │   ├── BarcodeScreen.tsx      
+│   │   ├── CountScreen.tsx        
+│   │   ├── DashboardScreen.tsx    
+│   │   ├── LocationsScreen.tsx    
+│   │   ├── LoginScreen.tsx        
+│   │   ├── ProductsScreen.tsx     
+│   │   └── ProfileScreen.tsx      
 │   └── types/                 # TypeScript interfaces and types
 ├── App.tsx                    # Entry point and navigation container
 └── app.json / eas.json        # Expo & EAS build configuration
 ```
+
+---
+
+## Application Screens & Flow
+
+The application is divided into several purpose-built screens to handle specific stages of the stock management workflow:
+
+| Screen | Description & Functionality |
+|---|---|
+| **LoginScreen** | The entry point of the application. Handles user authentication securely via Firebase Auth. Users must log in to access their centralized inventory. |
+| **DashboardScreen** | The main hub. Displays high-level metrics such as total item count, low stock alerts, and a summary of recent inventory movements. |
+| **BarcodeScreen** | The core utility screen. Opens the device camera to read 1D/2D barcodes in real-time. Automatically looks up the scanned code in the database. |
+| **AddProductScreen** | A data entry form for adding new items. If a scanned barcode is unrecognized, the user is redirected here with the barcode pre-filled to rapidly onboard the new product. |
+| **ProductsScreen** | A comprehensive list view of all tracked items. Allows users to search, filter, and manually edit stock levels or product details without scanning. |
+| **LocationsScreen** | Manages physical storage areas (e.g., "Main Warehouse", "Storefront A"). Products can be assigned to these locations to trace where stock is physically held. |
+| **CountScreen** | A specialized tool for periodic inventory audits. Users can rapidly scan items one after another to verify physical counts against the database records. |
+| **ProfileScreen** | User settings and session management, including options to log out or update account details. |
 
 ---
 
@@ -90,6 +107,53 @@ Built on top of Firebase services to guarantee data consistency.
 - Designed to feel native on Android while maintaining full functionality on the web via `react-native-web`.
 - Employs `react-navigation` with Bottom Tabs for fluid, intuitive screen transitions.
 - Fully typed with TypeScript to reduce runtime errors and enhance code predictability.
+
+---
+
+## Installation & Setup
+
+Follow these steps to run the project locally on your machine.
+
+### Prerequisites:
+- **Node.js** (v18 or newer recommended)
+- **npm** or **yarn**
+- **Expo CLI** (`npm install -g expo-cli`)
+- A Firebase project with Firestore and Authentication enabled.
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/kubrvk/barkodtakip.git
+cd barkodtakip
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Environment Configuration
+Duplicate the `.env.example` file and rename it to `.env`. Fill in your Firebase configuration keys:
+```env
+EXPO_PUBLIC_FIREBASE_API_KEY=your_api_key
+EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain
+EXPO_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+EXPO_PUBLIC_FIREBASE_APP_ID=your_app_id
+```
+
+*(Note: Never commit your `.env` file to version control. It is already included in `.gitignore`)*
+
+### 4. Run the Application
+
+**To start the Expo development server:**
+```bash
+npm start
+```
+
+Once the server is running, you can:
+- **Android:** Scan the QR code with the Expo Go app on your Android device, or press `a` to launch in an Android Emulator.
+- **Web:** Press `w` in the terminal to launch the web version of the app in your browser.
 
 ---
 
