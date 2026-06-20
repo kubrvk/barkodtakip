@@ -6,27 +6,44 @@
     "orientation": "portrait",
     "scheme": "barkodtakip",
     "userInterfaceStyle": "dark",
+    "backgroundColor": "#080d12",
     "assetBundlePatterns": [
       "**/*"
     ],
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#080d12"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kubrick.barkodtakip",
+      "buildNumber": "1"
     },
     "android": {
       "package": "com.kubrick.barkodtakip",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#080d12"
+      },
       "permissions": [
-        "CAMERA"
-      ]
+        "CAMERA",
+        "android.permission.CAMERA"
+      ],
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "bundler": "metro",
-      "output": "single"
+      "output": "single",
+      "favicon": "./assets/favicon.png"
     },
     "plugins": [
       [
         "expo-camera",
         {
-          "cameraPermission": "Barkod okutmak için kameraya erişim gerekli."
+          "cameraPermission": "BarkodTakip ürün barkodlarını okumak için kameraya erişim gerektiriyor."
         }
       ]
     ],
