@@ -10,12 +10,6 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#080d12"
-    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.kubrick.barkodtakip",
@@ -24,10 +18,6 @@
     "android": {
       "package": "com.kubrick.barkodtakip",
       "versionCode": 1,
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#080d12"
-      },
       "permissions": [
         "CAMERA",
         "android.permission.CAMERA"
@@ -36,8 +26,7 @@
     },
     "web": {
       "bundler": "metro",
-      "output": "single",
-      "favicon": "./assets/favicon.png"
+      "output": "single"
     },
     "plugins": [
       [
