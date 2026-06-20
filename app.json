@@ -10,6 +10,12 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "icon": "./assets/logo.png",
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#080d12"
+    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.kubrick.barkodtakip",
@@ -18,6 +24,10 @@
     "android": {
       "package": "com.kubrick.barkodtakip",
       "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo.png",
+        "backgroundColor": "#080d12"
+      },
       "permissions": [
         "CAMERA",
         "android.permission.CAMERA"

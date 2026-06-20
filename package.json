@@ -5,7 +5,7 @@
   "main": "expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
+    "android": "expo run:android",
     "web": "cross-env EXPO_ROUTER_DISABLE_RN_NAVIGATION_CHECK=1 expo start --web",
     "build:web": "cross-env EXPO_ROUTER_DISABLE_RN_NAVIGATION_CHECK=1 expo export --platform web",
     "test": "tsc --noEmit"

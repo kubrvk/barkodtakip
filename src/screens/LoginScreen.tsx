@@ -9,6 +9,7 @@ import {
   StyleSheet,
   Text,
   View,
+  Image,
 } from 'react-native';
 import { colors, radius, spacing } from '../config/theme';
 import { Button } from '../components/ui/Button';
@@ -73,7 +74,11 @@ export function LoginScreen() {
           {/* Brand */}
           <View style={styles.brand}>
             <View style={styles.brandIcon}>
-              <PackageCheck color={colors.success} size={36} />
+              <Image 
+                source={require('../../assets/logo.png')} 
+                style={{ width: 64, height: 64, borderRadius: 12 }} 
+                resizeMode="contain" 
+              />
             </View>
             <Text style={styles.brandName}>BarkodTakip</Text>
             <Text style={styles.brandSub}>
