@@ -66,30 +66,17 @@ barkodtakip/
 
 The application is divided into several purpose-built screens to handle specific stages of the stock management workflow:
 
-**LoginScreen:**
-- The entry point of the application. Handles user authentication securely via Firebase Auth.
-Users must log in to access their centralized inventory.
-
-**DashboardScreen:**
-- The main hub. Displays high-level metrics such as total item count, low stock alerts, and a summary of recent inventory movements.
-
-**BarcodeScreen:**
-- The core utility screen. Opens the device camera to read 1D/2D barcodes in real-time. Automatically looks up the scanned code in the database.
-
-**AddProductScreen:**
--  A data entry form for adding new items. If a scanned barcode is unrecognized, the user is redirected here with the barcode pre-filled to rapidly onboard the new product.
-
-**ProductsScreen:**
-- A comprehensive list view of all tracked items. Allows users to search, filter, and manually edit stock levels or product details without scanning.
-
-**LocationsScreen:**
-- Manages physical storage areas (e.g., "Main Warehouse", "Storefront A"). Products can be assigned to these locations to trace where stock is physically held.
-
-**CountScreen:**
-- A specialized tool for periodic inventory audits. Users can rapidly scan items one after another to verify physical counts against the database records.
-
-**ProfileScreen:**
-- User settings and session management, including options to log out or update account details.
+```text
+Application Screens
+├── LoginScreen        # The entry point of the application. Handles user authentication securely via Firebase Auth.
+├── DashboardScreen    # The main hub. Displays high-level metrics such as total item count and low stock alerts.
+├── BarcodeScreen      # The core utility screen. Opens the device camera to read 1D/2D barcodes in real-time.
+├── AddProductScreen   # A data entry form for adding new items. Auto-fills scanned barcodes if unrecognized.
+├── ProductsScreen     # A comprehensive list view of all tracked items. Allows search, filter, and manual edits.
+├── LocationsScreen    # Manages physical storage areas to trace where stock is physically held.
+├── CountScreen        # A specialized tool for periodic inventory audits. Rapidly scan items to verify counts.
+└── ProfileScreen      # User settings and session management, including log out and account details.
+```
 
 ---
 
