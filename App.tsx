@@ -249,12 +249,13 @@ const styles = StyleSheet.create({
     backgroundColor: colors.panel,
     borderTopColor: colors.border,
     borderTopWidth: 1,
-    height: 62,
-    paddingBottom: 8,
-    paddingTop: 6,
+    height: 68,
+    paddingBottom: 12,
+    paddingTop: 8,
   },
   tabLabel: {
     fontSize: 10,
     fontWeight: '600',
+    marginBottom: 4,
   },
 });
