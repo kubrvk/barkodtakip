@@ -68,14 +68,36 @@ The application is divided into several purpose-built screens to handle specific
 
 ```text
 Application Screens
-├── LoginScreen        # The entry point of the application. Handles user authentication securely via Firebase Auth.
-├── DashboardScreen    # The main hub. Displays high-level metrics such as total item count and low stock alerts.
-├── BarcodeScreen      # The core utility screen. Opens the device camera to read 1D/2D barcodes in real-time.
-├── AddProductScreen   # A data entry form for adding new items. Auto-fills scanned barcodes if unrecognized.
-├── ProductsScreen     # A comprehensive list view of all tracked items. Allows search, filter, and manual edits.
-├── LocationsScreen    # Manages physical storage areas to trace where stock is physically held.
-├── CountScreen        # A specialized tool for periodic inventory audits. Rapidly scan items to verify counts.
-└── ProfileScreen      # User settings and session management, including log out and account details.
+── LoginScreen:
+The entry point of the application.
+Handles user authentication securely via Firebase Auth.
+
+── DashboardScreen
+The main hub.
+Displays high-level metrics such as total item count and low stock alerts.
+
+── BarcodeScreen
+The core utility screen.
+Opens the device camera to read 1D/2D barcodes in real-time.
+
+── AddProductScreen
+A data entry form for adding new items.
+Auto-fills scanned barcodes if unrecognized.
+
+── ProductsScreen
+A comprehensive list view of all tracked items.
+llows search, filter, and manual edits.
+
+── LocationsScreen
+Manages physical storage areas to trace where stock is physically held.
+
+── CountScreen
+A specialized tool for periodic inventory audits.
+Rapidly scan items to verify counts.
+
+└── ProfileScreen
+User settings and session management,
+including log out and account details.
 ```
 
 ---
