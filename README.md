@@ -1,7 +1,7 @@
 # BARCODE TRACKING
 
 <img align="left" width="20%" src="https://raw.githubusercontent.com/kubrvk/portfolio/main/img/galeri/barkodtakip1.PNG"/>
-<h3> <a href="https://barkodtakips.web.app/"><img src="https://img.shields.io/badge/Live_Demo-042621?style=flat-square&logo=googlechrome&logoColor=white" height="25"/> </a></h3>
+<h3> <a href="https://barkodtakips.web.app/"><img src="https://img.shields.io/badge/Live_Demo https://barkodtakips.web.app-042621?style=flat-square&logo=googlechrome&logoColor=white" height="25"/> </a></h3>
 
 ![](https://img.shields.io/badge/React_Native-20232A?style=for-the-badges&logo=react&logoColor=61DAFB) ![](https://img.shields.io/badge/Expo-000020?style=for-the-badges&logo=expo&logoColor=white) ![](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badges&logo=firebase&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badges&logo=typescript&logoColor=white) ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badges)
 <br>
@@ -11,8 +11,6 @@ The app helps you scan barcodes, save product information, manage inventory, and
 
 Built primarily for Android and Web, the core design challenge was creating a responsive, cross-platform experience that handles device camera integration, local state management, and real-time database updates seamlessly.
 <br clear="left"/>
-<br>
-
 <p align="center">
 <img src="https://raw.githubusercontent.com/kubrvk/portfolio/main/img/galeri/barkodtakip2.PNG" width="24%"/><img src="https://raw.githubusercontent.com/kubrvk/portfolio/main/img/galeri/barkodtakip3.PNG" width="24%"/><img src="https://raw.githubusercontent.com/kubrvk/portfolio/main/img/galeri/barkodtakip4.PNG" width="24%"/><img src="https://raw.githubusercontent.com/kubrvk/portfolio/main/img/galeri/barkodtakip5.PNG" width="24%"/>
 </p>
