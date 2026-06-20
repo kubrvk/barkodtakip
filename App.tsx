@@ -11,7 +11,7 @@ import {
   Warehouse,
 } from 'lucide-react-native';
 import React, { useMemo, useState } from 'react';
-import { ActivityIndicator, Modal, StyleSheet, View } from 'react-native';
+import { ActivityIndicator, Modal, Platform, StyleSheet, View } from 'react-native';
 
 import { AddProductScreen } from './src/screens/AddProductScreen';
 import { BarcodeScreen } from './src/screens/BarcodeScreen';
@@ -249,13 +249,12 @@ const styles = StyleSheet.create({
     backgroundColor: colors.panel,
     borderTopColor: colors.border,
     borderTopWidth: 1,
+    height: Platform.OS === 'web' ? 65 : 70,
+    paddingBottom: Platform.OS === 'web' ? 10 : 15,
     paddingTop: 8,
-    paddingBottom: 8,
-    minHeight: 65,
   },
   tabLabel: {
     fontSize: 10,
     fontWeight: '600',
-    marginTop: 4,
   },
 });
