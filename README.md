@@ -15,9 +15,7 @@ Built primarily for Android and Web, the core design challenge was creating a re
 <p align="center">
 <img src="https://raw.githubusercontent.com/kubrvk/portfolio/main/img/galeri/barkodtakip2.PNG" width="24%"/><img src="https://raw.githubusercontent.com/kubrvk/portfolio/main/img/galeri/barkodtakip3.PNG" width="24%"/><img src="https://raw.githubusercontent.com/kubrvk/portfolio/main/img/galeri/barkodtakip4.PNG" width="24%"/><img src="https://raw.githubusercontent.com/kubrvk/portfolio/main/img/galeri/barkodtakip5.PNG" width="24%"/>
 </p>
-<p align="center">
-<img src="https://raw.githubusercontent.com/kubrvk/portfolio/main/img/galeri/barkodtakip6.PNG" width="24%"/><img src="https://raw.githubusercontent.com/kubrvk/portfolio/main/img/galeri/barkodtakip7.PNG" width="24%"/><img src="https://raw.githubusercontent.com/kubrvk/portfolio/main/img/galeri/barkodtakip11.png" width="24%"/>
-</p>
+
 
 ---
 
@@ -134,6 +132,7 @@ Built on top of Firebase services to guarantee data consistency.
 ---
 
 ## Installation & Setup
+<img src="https://raw.githubusercontent.com/kubrvk/portfolio/main/img/galeri/barkodtakip7.PNG" width="24%"/>
 
 Follow these steps to run the project locally on your machine.
 
