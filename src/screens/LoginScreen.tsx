@@ -103,6 +103,7 @@ export function LoginScreen() {
 
             <Input
               label="E-posta"
+              placeholder="mail"
               value={email}
               onChangeText={setEmail}
               autoCapitalize="none"
