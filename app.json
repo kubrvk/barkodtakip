@@ -31,8 +31,7 @@
       "permissions": [
         "CAMERA",
         "android.permission.CAMERA"
-      ],
-      "googleServicesFile": "./google-services.json"
+      ]
     },
     "web": {
       "bundler": "metro",
