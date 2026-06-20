@@ -178,6 +178,6 @@ Once the server is running, you can:
 
 ## Developer
 
-**Kubrik**
+**Kubrick**
 
-[GitHub](https://github.com/kubrvk) · [Portfolio](https://kubrvk.github.io/portfolio/)
+[GitHub](https://github.com/kubrvk) · [Portfolio](https://kubrvk.github.io/portfolio)
